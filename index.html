@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="MODEA - Modern women's fashion store">
+    <meta name="keywords" content="MODEA, women's fashion, clothing, fashion store">
+
+    <title>MODEA | Modern Fashion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            MODEA
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#offers">Offers</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                🔍
+            </button>
+
+            <button class="icon-btn" id="loginBtn" aria-label="Login">
+                👤
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div class="search-box" id="searchBox">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+        >
+
+        <button id="closeSearch">
+            ✕
+        </button>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    NEW COLLECTION 2026
+                </p>
+
+                <h1>
+                    STYLE THAT
+                    <span>DEFINES YOU</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover modern fashion designed to make
+                    every moment unforgettable.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#shop" class="primary-btn">
+                        Shop Now
+                    </a>
+
+                    <a href="#offers" class="secondary-btn">
+                        View Offers
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+            <div class="section-title">
+
+                <p>EXPLORE</p>
+
+                <h2>
+                    Shop By Category
+                </h2>
+
+            </div>
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <img src="images/product1.jpg" alt="Dresses">
+                    <div>
+                        <h3>Dresses</h3>
+                        <a href="#shop">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="images/product2.jpg" alt="Tops">
+                    <div>
+                        <h3>Tops</h3>
+                        <a href="#shop">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="images/product3.jpg" alt="Sets">
+                    <div>
+                        <h3>Sets</h3>
+                        <a href="#shop">Explore →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section" id="shop">
+
+            <div class="section-title">
+
+                <p>OUR COLLECTION</p>
+
+                <h2>
+                    New Arrivals
+                </h2>
+
+                <span>
+                    Discover our latest pieces
+                </span>
+
+            </div>
+
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- Product 1 -->
+
+                <article
+                    class="product-card"
+                    data-name="Elegant Black Dress"
+                    data-category="dresses"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product1.jpg"
+                            alt="Elegant Black Dress"
+                        >
+
+                        <span class="badge">
+                            NEW
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            data-product="1"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            DRESSES
+                        </p>
+
+                        <h3>
+                            Elegant Black Dress
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                149 SAR
+                            </span>
+
+                            <button
+                                class="add-btn"
+                                data-id="1"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+
+                <article
+                    class="product-card"
+                    data-name="Satin Evening Dress"
+                    data-category="dresses"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product2.jpg"
+                            alt="Satin Evening Dress"
+                        >
+
+                        <span class="badge">
+                            NEW
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            data-product="2"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            DRESSES
+                        </p>
+
+                        <h3>
+                            Satin Evening Dress
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                179 SAR
+                            </span>
+
+                            <button
+                                class="add-btn"
+                                data-id="2"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+
+                <article
+                    class="product-card"
+                    data-name="Minimal White Top"
+                    data-category="tops"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product3.jpg"
+                            alt="Minimal White Top"
+                        >
+
+                        <button
+                            class="wishlist"
+                            data-product="3"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            TOPS
+                        </p>
+
+                        <h3>
+                            Minimal White Top
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                89 SAR
+                            </span>
+
+                            <button
+                                class="add-btn"
+                                data-id="3"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+
+                <article
+                    class="product-card"
+                    data-name="Purple Satin Set"
+                    data-category="sets"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product4.jpg"
+                            alt="Purple Satin Set"
+                        >
+
+                        <span class="badge sale">
+                            SALE
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            data-product="4"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            SETS
+                        </p>
+
+                        <h3>
+                            Purple Satin Set
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">
+                                    179 SAR
+                                </span>
+
+                                <span class="price">
+                                    129 SAR
+                                </span>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                data-id="4"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 5 -->
+
+                <article
+                    class="product-card"
+                    data-name="Classic Blazer"
+                    data-category="blazers"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product5.jpg"
+                            alt="Classic Blazer"
+                        >
+
+                        <button
+                            class="wishlist"
+                            data-product="5"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            BLAZERS
+                        </p>
+
+                        <h3>
+                            Classic Blazer
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                199 SAR
+                            </span>
+
+                            <button
+                                class="add-btn"
+                                data-id="5"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+
+                <article
+                    class="product-card"
+                    data-name="Soft Knit Cardigan"
+                    data-category="tops"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product6.jpg"
+                            alt="Soft Knit Cardigan"
+                        >
+
+                        <button
+                            class="wishlist"
+                            data-product="6"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            TOPS
+                        </p>
+
+                        <h3>
+                            Soft Knit Cardigan
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                119 SAR
+                            </span>
+
+                            <button
+                                class="add-btn"
+                                data-id="6"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 7 -->
+
+                <article
+                    class="product-card"
+                    data-name="Modern Long Coat"
+                    data-category="coats"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product7.jpg"
+                            alt="Modern Long Coat"
+                        >
+
+                        <span class="badge">
+                            NEW
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            data-product="7"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            COATS
+                        </p>
+
+                        <h3>
+                            Modern Long Coat
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                229 SAR
+                            </span>
+
+                            <button
+                                class="add-btn"
+                                data-id="7"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 8 -->
+
+                <article
+                    class="product-card"
+                    data-name="Luxury Evening Set"
+                    data-category="sets"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/product8.jpg"
+                            alt="Luxury Evening Set"
+                        >
+
+                        <span class="badge sale">
+                            SALE
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            data-product="8"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            SETS
+                        </p>
+
+                        <h3>
+                            Luxury Evening Set
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">
+                                    249 SAR
+                                </span>
+
+                                <span class="price">
+                                    189 SAR
+                                </span>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                data-id="8"
+                            >
+                                Add +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OFFER ================= -->
+
+        <section class="offer-section" id="offers">
+
+            <div class="offer-content">
+
+                <p>
+                    LIMITED OFFER
+                </p>
+
+                <h2>
+                    Elevate Your
+                    <span>Style</span>
+                </h2>
+
+                <p>
+                    Enjoy exclusive prices on selected
+                    MODEA pieces for a limited time.
+                </p>
+
+                <a href="#shop" class="primary-btn">
+                    Shop Offers
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+                <img
+                    src="images/product7.jpg"
+                    alt="MODEA fashion"
+                >
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT MODEA
+                </p>
+
+                <h2>
+                    Fashion Made
+                    <span>For You.</span>
+                </h2>
+
+                <p>
+                    MODEA is a modern fashion destination created
+                    for women who love confidence, elegance and
+                    effortless style.
+                </p>
+
+                <p>
+                    We carefully select pieces that combine
+                    contemporary trends with timeless elegance.
+                </p>
+
+                <a href="#shop" class="text-btn">
+                    Discover MODEA →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section class="newsletter">
+
+            <div>
+
+                <p>
+                    STAY IN THE LOOP
+                </p>
+
+                <h2>
+                    Join the MODEA community.
+                </h2>
+
+            </div>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section" id="contact">
+
+            <div class="section-title">
+
+                <p>GET IN TOUCH</p>
+
+                <h2>
+                    Contact MODEA
+                </h2>
+
+            </div>
+
+           <div class="contact-grid">
+
+    <!-- WhatsApp -->
+    <a 
+        href="https://wa.me/966534724849"
+        target="_blank"
+        class="contact-card"
+    >
+        <span>📱</span>
+
+        <h3>
+            WhatsApp
+        </h3>
+
+        <p>
+            Chat with us directly
+        </p>
+    </a>
+
+
+    <!-- Instagram -->
+    <a
+        href="https://www.instagram.com/rafii0_0"
+        target="_blank"
+        class="contact-card"
+    >
+        <span>📸</span>
+
+        <h3>
+            Instagram
+        </h3>
+
+        <p>
+            @rafii0_0
+        </p>
+    </a>
+
+
+    <!-- Email -->
+    <a
+        href="mailto:teamwork0ok@email.com"
+        class="contact-card"
+    >
+        <span>✉</span>
+
+        <h3>
+            Email
+        </h3>
+
+        <p>
+            teamwork0ok@email.com
+        </p>
+    </a>
+
+</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            MODEA
+        </div>
+
+        <p>
+            Modern fashion. Timeless confidence.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 MODEA. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CART ================= -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    0 SAR
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= LOGIN ================= -->
+
+    <div class="modal" id="loginModal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="closeLogin"
+            >
+                ✕
+            </button>
+
+            <div class="modal-logo">
+                MODEA
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Sign in to your MODEA account.
+            </p>
+
+            <form id="loginForm">
+
+                <input
+                    type="email"
+                    placeholder="Email address"
+                    required
+                >
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="primary-btn full"
+                >
+                    Sign In
+                </button>
+
+            </form>
+
+            <p class="login-note">
+                Demo login — no account system connected yet.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        Added to cart ✓
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
